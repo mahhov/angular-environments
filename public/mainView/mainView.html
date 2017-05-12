@@ -16,7 +16,20 @@
         </div>
     </div>
 
-    <input class="col-xs-10" ng-model="inputQuery" ng-keyup="$event.keyCode===13?inputEnter():null" autofocus/>
+    <div class="col-xs-12" style="margin-bottom:30px;">
+        <input class="col-xs-10" ng-model="inputQuery" ng-keyup="$event.keyCode===13?inputEnter():null" autofocus/>
+    </div>
+
+    <div class="col-xs-12">
+        <p class="head">Command Usage: (uat3 | ra11 | csstv) [login | dev | setup | version]</p>
+        <p>case insensitive</p>
+        <p>second paramter defaults to login</p>
+        <p>second paramter only cares about first letter</p>
+        <p class="head">Example command to open up setup view for PET1:</p>
+        <p>peT1 setup</p>
+        <p>rS11 s</p>
+        <p>cssts set blah blah</p>
+    </div>
 
     <div class="error-message col-xs-12">
         {{errorMessage}}

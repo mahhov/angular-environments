@@ -12,3 +12,6 @@
     display: block;
     white-space: pre;
     font-family: Monospace; }
+  .main-view .head {
+    font-weight: bold;
+    margin-top: 30px; }

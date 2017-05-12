@@ -7,7 +7,7 @@ angular.module('environments.mainViewDirective', [])
             scope: {},
             controller: function($scope, $window, $timeout) {
                 $scope.addEnvironment = function(name, name2, url, sfurl) {
-                    var newEnvironment = {
+                    var newEnvironment = { // e.g.
                         name: name, // aft2
                         name2: name2, // ma11
                         url: url, //cstu
