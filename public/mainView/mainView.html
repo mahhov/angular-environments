@@ -1,0 +1,24 @@
+<div class="main-view col-xs-12">
+    <div class="coe-row col-xs-12">
+        <div class=""><a ng-click="gotoCoe()">coe</a></div>
+        <div class=""><a ng-click="gotoAllVersions()">Versions</a></div>
+        <div class=""><a ng-click="gotoProdVersion()">Prod Version</a></div>
+    </div>
+
+    <div class="env-rows col-xs-12">
+        <div class="row env-row" ng-repeat="env in environments">
+            <div class="col-xs-2">{{env.name}}</div>
+            <div class="col-xs-2">{{env.name2}}</div>
+            <div class="col-xs-2"><a ng-click="gotoEnvironment(env, 'login')">{{env.url}}</a></div>
+            <div class="col-xs-2"><a ng-click="gotoEnvironment(env, 'dev')">dev console</a></div>
+            <div class="col-xs-2"><a ng-click="gotoEnvironment(env, 'setup')">setup</a></div>
+            <div class="col-xs-2"><a ng-click="gotoEnvironment(env, 'version')">version</a></div>
+        </div>
+    </div>
+
+    <input class="col-xs-10" ng-model="inputQuery" ng-keyup="$event.keyCode===13?inputEnter():null" autofocus/>
+
+    <div class="error-message col-xs-12">
+        {{errorMessage}}
+    </div>
+</div>

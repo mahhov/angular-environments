@@ -1,0 +1,14 @@
+.main-view {
+  padding: 50px;
+  max-width: 1500px;
+  font-size: 18px; }
+  .main-view .env-row {
+    margin-bottom: 20px; }
+  .main-view .env-rows {
+    margin-bottom: 100px; }
+  .main-view .coe-row {
+    margin-bottom: 50px; }
+  .main-view .error-message {
+    display: block;
+    white-space: pre;
+    font-family: Monospace; }
