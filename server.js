@@ -18,7 +18,7 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'})); // parse applicati
 app.use(methodOverride());
 
 // listen (start app with node server.js) ======================================
-app.listen(8083);
+app.listen(process.env.PORT || 8085);
 console.log("App listening on port 8083");
 
 // routes ======================================================================
